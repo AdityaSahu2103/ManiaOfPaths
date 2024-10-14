@@ -17,6 +17,7 @@ import {
   Events,
 } from "./";
 import { Authentic, Community, confidential, oneonone, Top } from "../assets";
+import Welcome from "./Welcome";
 // import { MGP } from "../pages";
 
 const Home = () => {
@@ -97,19 +98,20 @@ const Home = () => {
         Scrolltoref={Scrolltoref}
         Scrolltotestimonial={Scrolltotestimonial}
       />
-      <HeroSection Scrolltoref={Scrolltoref} />
+      <Welcome/>
+      {/* <HeroSection Scrolltoref={Scrolltoref} /> */}
       <FirstCard />
-      <Tagline />
-      <Card />
+      {/* <Tagline /> */}
+      {/* <Card /> */}
       <Why Data={Data} />
       <Steps />
       <Transformation testimonialref={testimonialref} />
       <TeamCard />
       {/* <MGP page={"home"} /> */}
       <Events Scrolltoref={Scrolltoref} />
-      <Quote />
-      <LatestBlogs />
-      <Appointment />
+      {/* <Quote /> */}
+      {/* <LatestBlogs /> */}
+      {/* <Appointment /> */}
       <div ref={formref}>
         <Form />
       </div>

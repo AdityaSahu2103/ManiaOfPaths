@@ -4,7 +4,6 @@ import { auth, logout } from "../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { ArrowDropDown, Menu } from "@mui/icons-material";
 import { Carddata } from "./"; //Circular Import
-import { mainLogo } from "../assets";
 
 const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
   // state handlers
@@ -34,7 +33,7 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
         }`}
       >
         <div className="flex justify-between items-center px-5 md:px-9 py-3.5 gap-4">
-          <div>
+          <div className="border-zinc-500 border border-b-4 border-r-8">
             <Link
               to="/"
               className="flex"
@@ -42,21 +41,21 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                 window.scrollTo(0, 0);
               }}
             >
-              <img src={mainLogo} className="w-52" alt="" />
+              <img src="../../public/Logo.jpg" className="h-16 w-44 " alt="" />
             </Link>
           </div>
           <div className="items-center hidden lg:flex bg-">
             <ul className="flex flex-row items-center mr-6 space-x-6 list-none md:text-md  ">
-              <li className="cursor-pointer hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
+              <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
                 <Link to="/">Home</Link>
               </li>
               {/* dropdown web..... */}
               <div className="flex flex-col">
                 <li
                   onMouseEnter={() => setdropdown(!dropdown)}
-                  className="cursor-pointer hover:bg-[#7AB2B2] text-black rounded-md   transition-transform "
+                  className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform "
                 >
-                  Categories
+                  Explore Projects
                 </li>
 
                 {/* options....... */}
@@ -71,7 +70,7 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                     {Carddata.map((item, index) => {
                       return (
                         <li
-                          className=" duration-300 ease-in-out cursor-pointer hover:bg-[#7AB2B2]  text-black rounded-md   transition-transform "
+                          className=" duration-300 ease-in-out cursor-pointer px-3 py-2 hover:bg-[#7AB2B2]  text-black rounded-md   transition-transform "
                           key={index}
                         >
                           {" "}
@@ -93,26 +92,19 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                 </div>
               </div>
 
-              <li className="cursor-pointer hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
-                <Link to={"/how"}> How it works </Link>
+              <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
+                <Link to={"/how"}> Leader Board </Link>
               </li>
 
-              <li className="cursor-pointer hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
-                <Link to="/mentors">Mentors</Link>
+              <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
+                <Link to="/mentors">Hackathons</Link>
               </li>
-              {/* <li className="cursor-pointer hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
-                <Link to="https://community.mentorheal.com/">Join Our Community</Link>
-              </li> */}
 
-              {/* More...... */}
               <div>
                 <li
-                  onMouseEnter={() => {
-                    setMore(!more);
-                  }}
-                  className="cursor-pointer hover:bg-[#7AB2B2] text-black rounded-md  transition-transform "
+                  className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md  transition-transform "
                 >
-                  More
+                  Pulse
                 </li>
 
                 <div
@@ -123,10 +115,10 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                   } absolute bg-white shadow-md p-2 mt-3 rounded-lg`}
                 >
                   <ul className="grid grid-cols-2 gap-3 p-3 ">
-                    <li className="cursor-pointer hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
+                    <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
                       <Link to="/blog">Blog</Link>
                     </li>
-                    <li className="cursor-pointer hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
+                    <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
                       <Link to="/about">About us</Link>
                     </li>
                   </ul>
@@ -140,7 +132,7 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                   Logout
                 </li>
               ) : (
-                <li className="cursor-pointer bg-[#4a7999] opacity-95 hover:opacity-100 px-6 py-2 rounded-full text-white">
+                <li className="ml-40 cursor-pointer bg-[#4a7999] opacity-95 hover:opacity-100 px-6 py-2 rounded-full text-white">
                   <Link to="/login"> Login </Link>
                 </li>
               )}
@@ -149,9 +141,6 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                   <Link to="/join-as-mentor">Join as Mentor</Link>
                 </li>
               )}
-              <li className="cursor-pointer bg-[#4a7999] opacity-95 hover:opacity-100 px-6 py-2 rounded-full text-white">
-                  <Link to="https://community.mentorheal.com/">Join Our Community</Link>
-                </li>
             </ul>
           </div>
 
@@ -177,7 +166,7 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                   }}
                   className="transition duration-300 ease-in-out cursor-pointer"
                 >
-                  Categories
+                  Explore Projects
                   <ArrowDropDown />
                 </li>
                 <div
@@ -208,10 +197,10 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                   </ul>
                 </div>
                 <li className="transition duration-300 ease-in-out cursor-pointerz">
-                  <Link to={"/how"}>How it works</Link>
+                  <Link to={"/how"}>Leader Board</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <Link to="/mentors"> Mentors </Link>
+                  <Link to="/mentors"> Hackathons </Link>
                 </li>
 
                 <li
@@ -220,7 +209,7 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                   }}
                   className="flex items-center space-x-1 cursor-pointer"
                 >
-                  <h1>More</h1>
+                  <h1>Buzz Platform</h1>
                   <ArrowDropDown />
                 </li>
 
@@ -252,7 +241,9 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                     <Link to={"/blog"}>Blog</Link>
                   </p>
                   <p value="cursor-pointer transition ease-in-out duration-300">
-                    <Link to={"https://community.mentorheal.com/"}>community</Link>
+                    <Link to={"https://community.mentorheal.com/"}>
+                      community
+                    </Link>
                   </p>
                 </div>
               </ul>

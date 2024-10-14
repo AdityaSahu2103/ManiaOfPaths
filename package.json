@@ -20,6 +20,7 @@
     "axios": "^1.6.8",
     "firebase": "^10.11.0",
     "lodash": "^4.17.21",
+    "mentorheal": "file:",
     "moment": "^2.30.1",
     "react": "^18.2.0",
     "react-awesome-slider": "^4.1.0",

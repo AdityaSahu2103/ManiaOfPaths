@@ -13,6 +13,7 @@ import {
 } from "./components";
 import { Blog, EachBlog, MentorShipPage, ThankYou } from "./pages";
 import { FindMentors } from "./features";
+import Pulse  from "./components/Pulse";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/Pulse" element={<Pulse />} />
         <Route path="/:id" element={<ReadFull />} />
         <Route path="/join-as-mentor" element={<Mentor />} />
         <Route path="/join-as-mentor/apply" element={<MentorApplication />} />
