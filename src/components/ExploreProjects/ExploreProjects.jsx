@@ -4,6 +4,7 @@ import Filters from './Filters';
 import SearchBar from './SearchBar';
 import ProjectCard from './ProjectCard';
 import './exploreProjects.css';
+import NavBar from '../NavBar';
 
 const ExploreProjects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -52,31 +53,41 @@ const ExploreProjects = () => {
   };
 
   return (
-    <div className="explore-projects">
-      <SearchBar onSearch={handleSearch} />
-      <div className="projects-header">
-        <h1>Explore Projects</h1>
-        <button className="filter-button" onClick={toggleFilterDropdown}>Filters</button>
-      </div>
-
-      {showFilterDropdown && (
-        <div className="filter-dropdown">
-          <h3>Filter Options</h3>
-          <Filters onFilter={handleFilter} />
-          <button className="filter-option" onClick={resetFilters}>Back to Normal</button>
+    <>
+      <NavBar />
+      <div className="explore-projects ">
+        <div className="mx-6 px-4 md:px-8 md:mx-12  py-4 bg-blue-300 rounded text-center text-2xl text-white shadow-xl shadow-zinc-400 mb-12 ">
+          <br />
         </div>
-      )}
+        <SearchBar onSearch={handleSearch} />
+        <div className="projects-header">
+          <h1>Explore Projects</h1>
+          <button className="filter-button" onClick={toggleFilterDropdown}>
+            Filters
+          </button>
+        </div>
 
-      <div className="projects-list">
-        {filteredProjects.length > 0 ? (
-          filteredProjects.map(project => (
-            <ProjectCard key={project.id} project={project} />
-          ))
-        ) : (
-          <p>No projects found matching the criteria</p>
+        {showFilterDropdown && (
+          <div className="filter-dropdown">
+            <h3>Filter Options</h3>
+            <Filters onFilter={handleFilter} />
+            <button className="filter-option" onClick={resetFilters}>
+              Back to Normal
+            </button>
+          </div>
         )}
+
+        <div className="projects-list">
+          {filteredProjects.length > 0 ? (
+            filteredProjects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))
+          ) : (
+            <p>No projects found matching the criteria</p>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

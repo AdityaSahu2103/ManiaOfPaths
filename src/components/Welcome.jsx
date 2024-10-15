@@ -1,18 +1,17 @@
+import Typewriter from "../components/Typewriter";
 import bgImage from "../../public/HomeImg.png";
 
 function WelcomePage() {
   return (
     <div className="flex justify-center md:justify-evenly flex-col md:flex-row w-full lg:h-[600px]">
       <div className="my-auto w-full md:w-1/2 p-4 md:p-8 flex flex-col">
-        <span
-          className="text-5xl md:text-7xl font-semibold text-transparent bg-clip-text
+         <span
+          className="text-5xl md:text-7xl font-semibold text-transparent bg-clip-text mb-8
         bg-gradient-to-tr from-blue-500 to-red-600"
         >
           Path Mania Your perfect learning partner
-        </span>
-        <span className="text-2xl font-bold mt-4 lg:mt-10">
-          Start learning today for free, register today pay later
-        </span>
+        </span> 
+        <Typewriter/>
         <div className="flex flex-row lg:mt-8">
           <button className="text-xl  rounded-md w-32 h-12 m-4 bg-blue-500 p-2 border-2 hover:bg-white text-white hover:text-blue-500 font-semibold">
             Register

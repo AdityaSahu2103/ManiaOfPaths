@@ -23,6 +23,11 @@ function Login() {
   return (
     <>
       <NavBar />
+      <div className="">
+        <br />
+        <br />
+        <br />
+      </div>
       <div className="flex justify-center items-center bg-blue-100 pt-14">
         <div className="flex flex-col md:flex-row justify-center w-full bg-blue-100">
           <div className="myform w-full md:w-1/2 flex justify-center items-center bg-white">
@@ -81,6 +86,11 @@ function Login() {
             </form>
           </div>
         </div>
+      </div>
+      <div className="bg-blue-100">
+        <br />
+        <br />
+        <br />
       </div>
       <Footer />
     </>
