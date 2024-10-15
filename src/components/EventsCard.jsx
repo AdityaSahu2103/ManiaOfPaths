@@ -20,7 +20,7 @@ const events = [
       "This is a grand event to showcase emerging tech solutions. Open to all students!",
     date: "20th October 2024",
     link: "https://www.techfest.com",
-    image: "/path/to/technofest-image.jpg",
+    image: "../../public/Events/Technofea.png",
     bgColor: "bg-green-500",
   },
   // Add more events...

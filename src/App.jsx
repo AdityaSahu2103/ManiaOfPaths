@@ -18,6 +18,8 @@ import { FindMentors } from "./features";
 import Pulse  from "./components/Pulse";
 import ExploreProjects from "./components/ExploreProjects/ExploreProjects.jsx";
 import ProductDetail from './components/ProductDetail/ProductDetail';
+import LeaderBoard from "./components/LeaderBoard.jsx";
+import Hackathons from "./components/Hackathons.jsx";
 const App = () => {
   return (
     <>
@@ -28,6 +30,8 @@ const App = () => {
         <Route path="/event/:id" element={<EventDetail />} />{" "}
         {/* Dynamic route */}
         <Route path="/Pulse" element={<Pulse />} />
+        <Route path="/LeaderBoard" element={<LeaderBoard />} />
+        <Route path="/Hackathons" element={<Hackathons />} />
         <Route path="/:id" element={<ReadFull />} />
         <Route path="/join-as-mentor" element={<Mentor />} />
         <Route path="/join-as-mentor/apply" element={<MentorApplication />} />

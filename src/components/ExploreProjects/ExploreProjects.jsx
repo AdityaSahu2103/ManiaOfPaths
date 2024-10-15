@@ -5,6 +5,7 @@ import SearchBar from './SearchBar';
 import ProjectCard from './ProjectCard';
 import './exploreProjects.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 const ExploreProjects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -56,9 +57,6 @@ const ExploreProjects = () => {
     <>
       <NavBar />
       <div className="explore-projects ">
-        <div className="mx-6 px-4 md:px-8 md:mx-12  py-4 bg-blue-300 rounded text-center text-2xl text-white shadow-xl shadow-zinc-400 mb-12 ">
-          <br />
-        </div>
         <SearchBar onSearch={handleSearch} />
         <div className="projects-header">
           <h1>Explore Projects</h1>
@@ -87,6 +85,7 @@ const ExploreProjects = () => {
           )}
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

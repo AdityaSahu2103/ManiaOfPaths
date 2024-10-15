@@ -1,9 +1,9 @@
 import { useRef } from "react";
-import EventsCard from "./EventsCard";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import HackathonCard from "./HackathonCard";
 
-const Pulse = () => {
+const Hackathons = () => {
   const formref = useRef(null);
   const testimonialref = useRef(null);
 
@@ -25,16 +25,14 @@ const Pulse = () => {
         Scrolltoref={Scrolltoref}
         Scrolltotestimonial={Scrolltotestimonial}
       />
-      
+
       <div className="mx-6 px-4 md:px-8 md:mx-12 my-4 py-4 bg-blue-300 rounded text-center text-2xl text-white shadow-xl shadow-zinc-400 mb-12 ">
-        Capturing the dynamic atmosphere of the student community and the
-        ongoing Activities.
-        <br /> A continuous flow of updates, announcements, and information
+        Here you can Explore some of the latest Hackathons and Competitions
       </div>
-      <EventsCard />
+      <HackathonCard />
       <Footer Scrolltoref={Scrolltoref} />
     </div>
   );
 };
 
-export default Pulse;
+export default Hackathons;

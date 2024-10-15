@@ -9,17 +9,17 @@ const EventDetail = () => {
     <div className="max-w-5xl mx-auto my-8 p-6 bg-white drop-shadow-2xl rounded-lg border-2 h-full">
       <div className="flex justify-end">
         <button
-          className="bg-blue-600 p-2 rounded-lg text-white"
+          className="bg-blue-600 p-2 rounded-lg text-white mb-4"
           onClick={() => navigate(-1)} // Go back to the previous page
         >
           Go Back
         </button>
       </div>
-      <div className="mb-4 h-1/2">
+      <div className="mb-4 h-[650px]">
         <img
           src={event.image}
           alt={event.title}
-          className="w-full h-64 object-cover rounded-md"
+          className="w-full h-[650px] object-cover rounded-md"
         />
       </div>
       <h1 className="text-4xl font-bold text-gray-800 mb-4">{event.title}</h1>

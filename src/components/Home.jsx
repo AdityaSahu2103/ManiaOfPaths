@@ -98,9 +98,7 @@ const Home = () => {
         Scrolltoref={Scrolltoref}
         Scrolltotestimonial={Scrolltotestimonial}
       />
-      <div className="mx-6 px-4 md:px-8 md:mx-12  bg-blue-300 rounded text-center text-2xl text-white shadow-xl shadow-zinc-400 mb-12 ">
-        <br />
-      </div>
+      
       <Welcome />
       {/* <HeroSection Scrolltoref={Scrolltoref} /> */}
       <FirstCard />
