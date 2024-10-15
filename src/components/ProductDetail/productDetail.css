@@ -1,0 +1,115 @@
+/* Overall Page Layout */
+.product-detail-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .project-overview h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .project-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contributors, .technologies {
+    margin: 20px 0;
+  }
+  
+  .contributors ul, .technologies ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contributors li, .tech-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .contributors li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tech-item {
+    background-color: #efefef;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Project Images */
+  .project-images {
+    text-align: center;
+  }
+  
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .project-img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Team Journey Section */
+  .team-journey {
+    margin: 40px 0;
+  }
+  
+  /* Achievements & Ratings */
+  .achievements-ratings {
+    margin-top: 40px;
+  }
+  
+  .project-ratings {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Related Projects */
+  .related-projects {
+    margin-top: 50px;
+  }
+  
+  .related-projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .related-project-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  /* Contact Section */
+.contact-section {
+    margin-top: 40px;
+  }
+  
+  .contact-section a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+  }
+  

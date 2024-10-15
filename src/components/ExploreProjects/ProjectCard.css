@@ -1,0 +1,57 @@
+.project-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out elements evenly */
+    height: 350px; /* Set a fixed height to make cards uniform */
+    transition: transform 0.2s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .project-description {
+    flex-grow: 1; /* Allows description to take up remaining space */
+    text-align: center; /* Center the description */
+    margin-bottom: 10px;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the tech stack items */
+    margin-bottom: 10px;
+  }
+  
+  .skill-tag {
+    background-color: #efefef;
+    padding: 5px;
+    margin: 5px; /* Adds margin around tags for spacing */
+    border-radius: 3px;
+  }
+  
+  .view-project-button {
+    background-color: #0a4dae;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Ensure the button stays at the bottom */
+    text-align: center; /* Center the button text */
+  }
+  
+  .view-project-button:hover {
+    background-color: #083c92;
+  }
+  

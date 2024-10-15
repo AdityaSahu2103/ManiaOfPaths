@@ -1,0 +1,33 @@
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 3px solid #ddd;
+    padding-left: 20px;
+  }
+  
+  .timeline-step {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .timeline-step::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+  }
+  
+  .timeline-step h4 {
+    font-size: 1.5rem;
+  }
+  
+  .timeline-step span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  

@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5faff; /* Light blue background */
+    color: #333;
+  }
+  
+  .explore-projects {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s;
+  }
+  
+  .search-bar input:focus {
+    border-color: #0a4dae;
+    outline: none;
+  }
+  
+  /* Project Cards */
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+  }
+  
+  .project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add hover effect */
+  }
+  
+  .project-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
+  /* Skill Tags */
+  .skill-tag {
+    background-color: #e0f7fa; /* Soft blue for skill tags */
+    color: #007c91;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 12px; /* Rounded tags */
+    font-size: 0.85rem;
+    display: inline-block;
+  }
+  
+  /* Buttons */
+  .cta-button {
+    background-color: #0a4dae; /* Primary button color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #083c92; /* Darker blue on hover */
+  }
+  
+  /* Filter Section */
+  .filter-section {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #f5faff;
+    margin-bottom: 20px;
+  }
+  
+  .filter-section h3 {
+    color: #0a4dae;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .filter-section select,
+  .filter-section input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-button {
+    background-color: #0a4dae;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: #083c92;
+  }
+  
+  .filter-dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust according to your layout */
+    right: 20px; /* Adjust according to your layout */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .filter-option {
+    background-color: #efefef; 
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left; 
+  }
+  
+  .filter-option:hover {
+    background-color: #ddd; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+      padding: 15px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .projects-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  

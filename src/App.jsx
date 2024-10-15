@@ -14,7 +14,8 @@ import {
 import { Blog, EachBlog, MentorShipPage, ThankYou } from "./pages";
 import { FindMentors } from "./features";
 import Pulse  from "./components/Pulse";
-
+import ExploreProjects from "./components/ExploreProjects/ExploreProjects.jsx";
+import ProductDetail from './components/ProductDetail/ProductDetail';
 const App = () => {
   return (
     <>
@@ -33,7 +34,9 @@ const App = () => {
         <Route path="/mentors" element={<FindMentors />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/explore-projects" element={<ExploreProjects />} />
         <Route path="/mentor-ship-page" element={<MentorShipPage />} />
+        <Route path="/project/:id" element={<ProductDetail />} />
       </Routes>
       <WhatsAppWidget />
     </>
