@@ -1,4 +1,6 @@
 import { Route, Routes } from "react-router-dom";
+import EventsCard from "./components/EventsCard";
+import EventDetail from "./components/EventDetail";
 import {
   About,
   BookForm,
@@ -22,6 +24,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/" element={<EventsCard />} />
+        <Route path="/event/:id" element={<EventDetail />} />{" "}
+        {/* Dynamic route */}
         <Route path="/Pulse" element={<Pulse />} />
         <Route path="/:id" element={<ReadFull />} />
         <Route path="/join-as-mentor" element={<Mentor />} />
@@ -44,3 +49,5 @@ const App = () => {
 };
 
 export default App;
+
+

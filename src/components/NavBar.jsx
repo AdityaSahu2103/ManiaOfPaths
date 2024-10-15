@@ -46,14 +46,14 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
           </div>
           <div className="items-center hidden lg:flex bg-">
             <ul className="flex flex-row items-center mr-6 space-x-6 list-none md:text-md  ">
-              <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
+              <li className="cursor-pointer px-3 py-2 hover:text-blue-500 text-black rounded-md   transition-transform ">
                 <Link to="/">Home</Link>
               </li>
               {/* dropdown web..... */}
               <div className="flex flex-col">
                 <li
                   onMouseEnter={() => setdropdown(!dropdown)}
-                  className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform "
+                  className="cursor-pointer px-3 py-2 hover:text-blue-500 text-black rounded-md   transition-transform "
                 >
                   Explore Projects
                 </li>
@@ -70,7 +70,7 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                     {Carddata.map((item, index) => {
                       return (
                         <li
-                          className=" duration-300 ease-in-out cursor-pointer px-3 py-2 hover:bg-[#7AB2B2]  text-black rounded-md   transition-transform "
+                          className=" duration-300 ease-in-out cursor-pointer px-3 py-2 hover:text-blue-500  text-black rounded-md   transition-transform "
                           key={index}
                         >
                           {" "}
@@ -92,38 +92,18 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                 </div>
               </div>
 
-              <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
+              <li className="cursor-pointer px-3 py-2 hover:text-blue-500 text-black rounded-md   transition-transform ">
                 <Link to={"/how"}> Leader Board </Link>
               </li>
 
-              <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
+              <li className="cursor-pointer px-3 py-2 hover:text-blue-500 text-black rounded-md   transition-transform ">
                 <Link to="/mentors">Hackathons</Link>
               </li>
 
-              <div>
-                <li
-                  className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md  transition-transform "
-                >
-                  Pulse
-                </li>
-
-                <div
-                  onMouseEnter={() => setMore(true)}
-                  onMouseLeave={() => setMore(false)}
-                  className={`${
-                    more ? "block" : "hidden"
-                  } absolute bg-white shadow-md p-2 mt-3 rounded-lg`}
-                >
-                  <ul className="grid grid-cols-2 gap-3 p-3 ">
-                    <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
-                      <Link to="/blog">Blog</Link>
-                    </li>
-                    <li className="cursor-pointer px-3 py-2 hover:bg-[#7AB2B2] text-black rounded-md   transition-transform ">
-                      <Link to="/about">About us</Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <li className="cursor-pointer px-3 py-2 hover:text-blue-500 text-black rounded-md  transition-transform ">
+                <Link to="/Pulse">Pulse</Link>
+              </li>
+              <div></div>
               {user ? (
                 <li
                   className="cursor-pointer bg-[#4a7999] px-6 py-2 rounded-full text-white"
@@ -132,12 +112,12 @@ const NavBar = ({ Scrolltoref, Scrolltotestimonial }) => {
                   Logout
                 </li>
               ) : (
-                <li className="ml-40 cursor-pointer bg-[#4a7999] opacity-95 hover:opacity-100 px-6 py-2 rounded-full text-white">
+                <li className="ml-40 cursor-pointer bg-blue-500 opacity-90 hover:opacity-100 px-6 py-2 rounded-full text-white">
                   <Link to="/login"> Login </Link>
                 </li>
               )}
               {mentorjwt ? null : (
-                <li className="cursor-pointer bg-[#4a7999] opacity-95 hover:opacity-100 px-6 py-2 rounded-full text-white">
+                <li className="cursor-pointer bg-blue-500 opacity-90 hover:opacity-100 px-6 py-2 rounded-full text-white">
                   <Link to="/join-as-mentor">Join as Mentor</Link>
                 </li>
               )}

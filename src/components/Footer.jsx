@@ -29,7 +29,7 @@ const Footer = ({ Scrolltoref }) => {
         source: window.location.href,
       });
       server.post("/api/mail/send-newsletter-confirmation", {
-        name: "Mentorheal Subscriber",
+        name: "Path Mania Subscriber",
         email: email.toLowerCase(),
       });
       toast.success("Subscribed successfully! 🎉");
@@ -54,13 +54,13 @@ const Footer = ({ Scrolltoref }) => {
                 }}
               >
                 <p className="mx-auto mb-5 text-3xl text-transparent bg-gradient-to-r from-white via-[#b2d6ee] to-white bg-clip-text md:text-4xl">
-                  MentorHeal
+                  Path Mania
                 </p>
               </Link>
             </div>
             <div className="text-xs text-center text-white lg:text-sm">
               <p className="leading-5 font-kanit md:mx-4">
-                MentorHeal is the holistic wellness mentorship platform where we
+                Path Mania is the holistic wellness mentorship platform where we
                 connect the mentees with experienced, qualified and certified
                 mentors across the country.
               </p>
@@ -89,7 +89,7 @@ const Footer = ({ Scrolltoref }) => {
             <div className="flex flex-wrap mb-6 items-top">
               <div className="w-full px-4 ml-auto lg:w-4/12">
                 <span className="block mb-2 text-sm text-white uppercase font-kanit">
-                  Mentorheal
+                  Path Mania
                 </span>
                 <ul className="text-[#dde5f1]   list-unstyled space-y-4 my-6 cursor-pointer ">
                   <li className="hover:text-white">
@@ -108,10 +108,12 @@ const Footer = ({ Scrolltoref }) => {
                   Categories
                 </span>
                 <ul className="text-[#dde5f1] list-unstyled space-y-3 my-6 cursor-pointer">
-                  {Carddata.map((item, index) => {
+                  {Carddata.slice(0, 5).map((item, index) => {
                     return (
-                      <li className="cursor-pointer font-kanit hover:text-white" key={index}>
-                        {" "}
+                      <li
+                        className="cursor-pointer font-kanit hover:text-white"
+                        key={index}
+                      >
                         <Link
                           key={index}
                           to={`/${item.Title}`}
@@ -136,7 +138,10 @@ const Footer = ({ Scrolltoref }) => {
                   <li className="hover:text-white">Support</li>
                   <li className="hover:text-white">Terms &amp; Conditions</li>
                   <li className="hover:text-white">Privacy Policy</li>
-                  <li onClick={Scrolltoref} className="font-kanit hover:text-white">
+                  <li
+                    onClick={Scrolltoref}
+                    className="font-kanit hover:text-white"
+                  >
                     Contact Us{" "}
                   </li>
                 </ul>
@@ -146,16 +151,25 @@ const Footer = ({ Scrolltoref }) => {
         </div>
 
         <div className="flex items-center justify-center space-x-6 cursor-pointer [&>a]:p-1 [&>a]:bg-white [&>a]:rounded-full ">
-          <a className="hover:scale-110" href="https://www.linkedin.com/company/mentorheal/">
+          <a
+            className="hover:scale-110"
+            href="https://www.linkedin.com/company/Path Mania/"
+          >
             <LinkedIn style={{ color: "#1DA1F2" }} fontSize="large" />
           </a>
-          <a className="hover:scale-110" href="https://instagram.com/mentorheal_forlife">
+          <a
+            className="hover:scale-110"
+            href="https://instagram.com/Path Mania_forlife"
+          >
             <Instagram style={{ color: "#C13584" }} fontSize="large" />
           </a>
-          <a className="hover:scale-110" href="https://x.com/MentorHeal">
+          <a className="hover:scale-110" href="https://x.com/Path Mania">
             <FaXTwitter size={35} />
           </a>
-          <a className="hover:scale-110" href="https://youtube.com/@MentorHealOfficial">
+          <a
+            className="hover:scale-110"
+            href="https://youtube.com/@Path ManiaOfficial"
+          >
             <YouTube style={{ color: "#CD201F" }} fontSize="large" />
           </a>
         </div>
@@ -167,7 +181,7 @@ const Footer = ({ Scrolltoref }) => {
         <div className="w-full px-4 mx-auto text-center md:w-4/12">
           <div className="py-1 text-sm text-white font-kanit">
             Copyright ©<span className="mx-1">{year}</span>
-            <a href="/">MentorHeal</a>
+            <a href="/">Path Mania</a>
           </div>
         </div>
       </div>
