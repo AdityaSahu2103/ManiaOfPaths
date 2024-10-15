@@ -1,0 +1,22 @@
+.contact-section {
+    margin: 20px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-button {
+    padding: 10px 15px;
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #138496;
+  }
+  

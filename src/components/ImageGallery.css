@@ -1,0 +1,23 @@
+/* Image Gallery Section */
+.image-gallery {
+    display: flex;                /* Use flexbox for horizontal layout */
+    justify-content: center;      /* Center the images horizontally */
+    align-items: center;          /* Center images vertically within the row */
+    gap: 20px;                   /* Space between images */
+    margin: 20px 0;              /* Space above and below the gallery */
+    padding: 20px;                /* Padding around the gallery */
+    border-radius: 8px;          /* Rounded corners */
+    background-color: #f8fafc;   /* Light background color */
+  }
+  
+  /* Individual Image Styles */
+  .image-gallery img {
+    width: 200px;                /* Set a fixed width for the images */
+    height: auto;                /* Maintain aspect ratio */
+    border-radius: 8px;         /* Rounded corners for images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+  
+  /* Heading Styles */
+  
+  

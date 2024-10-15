@@ -1,29 +1,70 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import './Filters.css';
 
-const Filters = ({ onFilter }) => {
+// Define the available skills
+const availableSkills = [
+  'React',
+  'Node.js',
+  'JavaScript',
+  'Python',
+  'Java',
+  'C++',
+  'Ruby',
+  'PHP',
+  'Go',
+  'Swift',
+  // Add more skills as needed
+];
+
+const Filters = ({ onFilter, onClose }) => {
   const [selectedSkills, setSelectedSkills] = useState([]);
   const [selectedType, setSelectedType] = useState('');
   const [selectedRating, setSelectedRating] = useState(0);
+  const filterRef = useRef(null); // Ref to the filter box
 
   const handleApplyFilters = () => {
     onFilter({
       skills: selectedSkills,
       type: selectedType,
-      rating: selectedRating
+      rating: selectedRating,
     });
   };
 
+  // Close filter box when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (filterRef.current && !filterRef.current.contains(event.target)) {
+        onClose(); // Call the onClose function passed as a prop
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [onClose]);
+
   return (
-    <div className="filters">
+    <div className="filters" ref={filterRef}>
       {/* Skills Filter */}
       <div className="filter-group">
         <h4>Skills</h4>
-        <input
-          type="checkbox"
-          value="React"
-          onChange={e => setSelectedSkills([...selectedSkills, e.target.value])}
-        /> React
-        {/* Add more skill filters */}
+        {availableSkills.map((skill) => (
+          <div key={skill}>
+            <input
+              type="checkbox"
+              value={skill}
+              checked={selectedSkills.includes(skill)}
+              onChange={e => {
+                if (selectedSkills.includes(e.target.value)) {
+                  setSelectedSkills(selectedSkills.filter(s => s !== e.target.value));
+                } else {
+                  setSelectedSkills([...selectedSkills, e.target.value]);
+                }
+              }}
+            /> {skill}
+          </div>
+        ))}
       </div>
 
       {/* Type Filter */}

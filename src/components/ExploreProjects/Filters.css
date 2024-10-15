@@ -1,0 +1,57 @@
+/* Filters Styles */
+.filters {
+    border: 1px solid #e0e0e0; /* Softer border color */
+    border-radius: 8px;
+    padding: 20px; /* Increased padding for better spacing */
+    background-color: #f5faff; /* Light blue background to match overall theme */
+    max-width: 300px; /* Adjusted width */
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    max-height: 400px; /* Limit vertical height */
+    overflow-y: auto; /* Add scroll if content exceeds max height */
+}
+
+.filter-group {
+    margin-bottom: 16px; /* Increased spacing for better separation */
+}
+
+.filter-group h4 {
+    margin-bottom: 8px; /* Increased spacing for header */
+    font-size: 1.2em; /* Slightly larger font size for visibility */
+    color: #0a4dae; /* Color for header */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Increased spacing for checkboxes */
+}
+
+/* Style for select dropdown */
+select {
+    width: 100%;
+    padding: 10px; /* Increased padding for comfort */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff;
+    font-size: 1em; /* Standard font size */
+    transition: border-color 0.3s; /* Transition for focus */
+}
+
+select:focus {
+    border-color: #0a4dae; /* Highlighted border on focus */
+}
+
+/* Button styles */
+button {
+    background-color: #0a4dae; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 25px; /* More rounded for a modern look */
+    padding: 10px 15px; /* Increased padding */
+    cursor: pointer;
+    font-size: 1em; /* Standard font size */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #083c92; /* Darker blue on hover */
+}

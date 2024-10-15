@@ -8,13 +8,15 @@ import NavBar from '../NavBar';
 import Footer from '../Footer';
 
 const ExploreProjects = () => {
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  // Store the original projects in state
+  const [originalProjects] = useState(projects);
+  const [filteredProjects, setFilteredProjects] = useState(originalProjects);
   const [searchTerm, setSearchTerm] = useState('');
   const [showFilterDropdown, setShowFilterDropdown] = useState(false);
 
   // Function to handle filtering by skill, type, and rating
   const handleFilter = (filters) => {
-    let updatedProjects = projects;
+    let updatedProjects = originalProjects;
 
     // Apply filters
     if (filters.skills.length > 0) {
@@ -37,7 +39,7 @@ const ExploreProjects = () => {
   // Function to handle search
   const handleSearch = (term) => {
     setSearchTerm(term);
-    const searchedProjects = projects.filter(project =>
+    const searchedProjects = originalProjects.filter(project =>
       project.title.toLowerCase().includes(term.toLowerCase()) ||
       project.description.toLowerCase().includes(term.toLowerCase())
     );
@@ -49,14 +51,17 @@ const ExploreProjects = () => {
   };
 
   const resetFilters = () => {
-    setFilteredProjects(projects); // Reset to all projects
+    console.log('Resetting filters...'); // Debugging log to confirm function call
+    setFilteredProjects(projects); // Reset to the original projects
     setShowFilterDropdown(false); // Close the dropdown
+    // Optionally reset the search term
+    console.log(filteredProjects); // Log the filtered projects after reset
   };
 
   return (
     <>
       <NavBar />
-      <div className="explore-projects ">
+      <div className="explore-projects">
         <SearchBar onSearch={handleSearch} />
         <div className="projects-header">
           <h1>Explore Projects</h1>
@@ -75,6 +80,7 @@ const ExploreProjects = () => {
           </div>
         )}
 
+
         <div className="projects-list">
           {filteredProjects.length > 0 ? (
             filteredProjects.map((project) => (
@@ -85,7 +91,7 @@ const ExploreProjects = () => {
           )}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

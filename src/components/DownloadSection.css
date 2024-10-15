@@ -1,0 +1,36 @@
+.download-section {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #e0f2fe; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.download-section h2 {
+  font-size: 1.8em; /* Increased font size */
+  margin-bottom: 15px; /* More space below the title */
+  color: #333; /* Darker text color for better readability */
+  text-align: center; /* Centered heading */
+}
+
+.download-buttons {
+  display: flex; /* Flexbox for better alignment */
+  justify-content: center; /* Center the buttons */
+  gap: 20px; /* Space between buttons */
+  margin-top: 15px; /* Space above buttons */
+}
+
+.download-button {
+  padding: 12px 20px; /* Larger button size */
+  background-color: #28a745; /* Green background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Adjusted font size for readability */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.download-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

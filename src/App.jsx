@@ -20,6 +20,8 @@ import ExploreProjects from "./components/ExploreProjects/ExploreProjects.jsx";
 import ProductDetail from './components/ProductDetail/ProductDetail';
 import LeaderBoard from "./components/LeaderBoard.jsx";
 import Hackathons from "./components/Hackathons.jsx";
+import TeamJourney from './components/ProductDetail/TeamJourney';
+
 const App = () => {
   return (
     <>
@@ -46,6 +48,7 @@ const App = () => {
         <Route path="/explore-projects" element={<ExploreProjects />} />
         <Route path="/mentor-ship-page" element={<MentorShipPage />} />
         <Route path="/project/:id" element={<ProductDetail />} />
+        <Route path="/team-journey/:contributorName"  element={<TeamJourney />} />
       </Routes>
       <WhatsAppWidget />
     </>
