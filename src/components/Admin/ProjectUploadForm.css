@@ -1,0 +1,55 @@
+.upload-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .upload-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .upload-form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .upload-form-container input,
+  .upload-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .upload-form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .upload-form-container button:hover {
+    background-color: #218838;
+  }
+  
+  .progress-bar {
+    height: 25px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 4px;
+    margin-top: 15px;
+  }
+  

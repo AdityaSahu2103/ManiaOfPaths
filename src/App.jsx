@@ -21,6 +21,7 @@ import ProductDetail from './components/ProductDetail/ProductDetail';
 import LeaderBoard from "./components/LeaderBoard.jsx";
 import Hackathons from "./components/Hackathons.jsx";
 import TeamJourney from './components/ProductDetail/TeamJourney';
+import ProjectUploadForm from "./components/Admin/ProjectUploadForm.jsx";
 
 const App = () => {
   return (
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/mentor-ship-page" element={<MentorShipPage />} />
         <Route path="/project/:id" element={<ProductDetail />} />
         <Route path="/team-journey/:contributorName"  element={<TeamJourney />} />
+        <Route path="project-upload" element={<ProjectUploadForm/>}/>
       </Routes>
       <WhatsAppWidget />
     </>

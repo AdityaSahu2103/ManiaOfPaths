@@ -10,7 +10,7 @@ const availableSkills = [
   'Java',
   'C++',
   'Ruby',
-  'PHP',
+  'Machine Learning',
   'Go',
   'Swift',
   // Add more skills as needed
