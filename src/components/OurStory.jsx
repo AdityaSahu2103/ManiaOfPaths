@@ -11,7 +11,7 @@ const OurStory = () => {
           ABOUT US
         </h1>
         <p className="text-[#7C7C7C] font-kanit leading-5 text-sm md:text-[16.5px] md:leading-7 lg:leading-9 w-80 lg:w-[40vw] mt-5">
-          <b>MentorHeal</b> is a comprehensive platform dedicated to holistic
+          <b>Path Mania</b> is a comprehensive platform dedicated to holistic
           wellness mentorship, providing individuals with access to certified
           mentors in various life aspects, including career development, mental
           health, relationships, fitness, financial wellness, spiritual and
@@ -19,7 +19,7 @@ const OurStory = () => {
           holistic well-being and personal growth are accessible to all,
           fostering meaningful connections and tailoring mentorship to
           individual needs while prioritizing expertise, credibility,
-          confidentiality, and trust. <b>MentorHeal</b> aims to empower
+          confidentiality, and trust. <b>Path Mania</b> aims to empower
           individuals on their journey towards self-improvement and a balanced,
           fulfilling life.
         </p>

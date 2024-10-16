@@ -17,14 +17,13 @@ const Card = () => {
             }}
           >
             <div className="flex justify-center w-96 h-96  ease-in-out rounded-lg cursor-pointer hover:shadow-md shadow-slate-50 scroll-smooth transition-transform duration-300 transform hover:scale-105 ">
-              <div
-                className=" border-2 border-black rounded-lg flex flex-col items-center  bg-[#EEF7FF]  shadow-lg hover:shadow-xl  hover:shadow-gray-300 bg-cover bg-center  ">
-                  <div>
+              <div className=" border-2 border-black rounded-lg flex flex-col items-center  bg-[#EEF7FF]  shadow-lg hover:shadow-xl  hover:shadow-gray-300 bg-cover bg-center  ">
+                <div>
                   <img
-                  src={item.image}
-                  className=" h-56 w-96  rounded-lg border-black dark:border-white"
-                />
-                  </div>
+                    src={item.image}
+                    className=" h-56 w-96  rounded-lg border-black dark:border-white"
+                  />
+                </div>
                 <div className="  h-36 w-96   flex flex-col items-center justify-center  text-white  ">
                   <h1 className="text-3xl text-center  font-kanit  text-[black] border-cyan-500 rounded-md">
                     {item.Title}
@@ -56,18 +55,17 @@ const FirstCard = () => {
             </h1>
             <div className=" text-[#176B87] md:max-w-[60vw] lg:text-3x1 leading-6 md:leading-7 font-kanit ">
               <p className="text-base text-pretty ">
-                Mentorship is invaluable for individuals seeking personal and
-                professional growth. It offers guidance, wisdom, and support
-                from experienced mentors, helping mentees expand their
-                knowledge, refine their skills, and navigate challenges. Through
-                mentorship, mentees gain valuable insights, receive constructive
-                feedback, and build meaningful relationships that foster
-                development and resilience. Mentors provide encouragement, share
-                their experiences, and offer advice, empowering mentees to
-                overcome obstacles and achieve their goals. Ultimately,
-                mentorship cultivates a culture of learning, collaboration, and
-                mentorship, benefiting both mentors and mentees as they embark
-                on their respective journeys of growth and success.
+                In our platform, mentorship is the key to unlocking your full
+                potential. With guidance from experienced seniors and alumni,
+                you'll gain insider knowledge on everything from must-attend
+                college events to exclusive hackathons. Mentors will help you
+                navigate the overwhelming choices in skill-building, giving you
+                clear roadmaps for mastering tech stacks like web development,
+                DSA, and machine learning. Beyond technical skills, they'll
+                share real-world insights on internships, placements, and how to
+                make the most of your time on campus. Whether it's preparing for
+                competitions or building your project portfolio, your mentor
+                will be your personalized guide to success!
               </p>
               {/* <h5 className="text-black text-x3 underline font-bold inline">
                 

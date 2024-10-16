@@ -11,7 +11,7 @@ const Why = () => {
   const Data = [
     {
       image: Authentic,
-      title: "Authentic Guidance",
+      title: "Project based Learning",
     },
     {
       image: oneonone,
@@ -23,7 +23,7 @@ const Why = () => {
     },
     {
       image: Community,
-      title: "Community Support",
+      title: "Event Info",
     },
     {
       image: confidential,
@@ -37,7 +37,7 @@ const Why = () => {
         <h1 className="text-4xl font-kanit md:text-4xl font-semibold">
           Why{" "}
           <span className="font-kanit text-transparent bg-gradient-to-l from-[#4a7999] via-[#5b99c3] to-[#4c8db8] bg-clip-text">
-            MentorHeal?
+            Path Mania ?
           </span>
         </h1>
       </div>

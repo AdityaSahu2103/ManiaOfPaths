@@ -8,7 +8,7 @@ const OurMission = () => {
           OUR MISSION
         </h1>
         <p className="text-[#7C7C7C] font-kanit leading-5 text-sm md:text-[16.5px] md:leading-7 lg:leading-9 w-80 lg:w-[40vw] mt-5">
-          MentorHeal aims to be India{`'`}s pioneering holistic wellness brand,
+          Path Mania aims to be India{`'`}s pioneering holistic wellness brand,
           guided by a profound understanding of the privilege of human existence
           and the profound potential within each individual. Recognizing that
           life consists of four essential dimensions - physical health (body),

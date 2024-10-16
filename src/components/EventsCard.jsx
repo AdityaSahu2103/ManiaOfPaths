@@ -23,6 +23,52 @@ const events = [
     image: "../../public/Events/Technofea.png",
     bgColor: "bg-green-500",
   },
+  {
+    id: 3,
+    title: "CODING FORUM LEAGUE",
+    organizer: "Coding Forum VIIT",
+    details:
+      "This is a grand event to showcase Your Coding Talents. Open to all students!",
+    date: "16 October 2024",
+    link: "https://www.techfest.com",
+    image: "../../public/Events/Technofea.png",
+    bgColor: "bg-yellow-500",
+  },
+  {
+    id: 4,
+    title: "INNOVATION FEST 2024",
+    organizer: "VU-BU CENTRE OF EXCELLENCE",
+    details:
+      "This is a grand event to showcase Your Design Thinking Talents Open to all students!",
+    date: "18 October 2024",
+    link: "https://www.techfest.com",
+    image: "../../public/Events/Technofea.png",
+    bgColor: "bg-rose-500",
+  },
+
+  {
+    id: 5,
+    title: "VIZ-A-THON 3.0",
+    organizer: "ARTIFICIAL INTELLIGENS STUDENT ASSOCIATION",
+    details:
+      "This is a grand event to showcase Your Coding Talents. Open to all students!",
+    date: "22 October 2024",
+    link: "https://www.techfest.com",
+    image: "../../public/Events/Technofea.png",
+    bgColor: "bg-violet-400",
+  },
+  {
+    id: 6,
+    title: "B-Plan",
+    organizer: "Entrepreneurship Development cell",
+    details:
+      "This is a grand event to showcase Your Business Talents . Open to all students!",
+    date: "28 October 2024",
+    link: "https://www.techfest.com",
+    image: "../../public/Events/Technofea.png",
+    bgColor: "bg-zinc-500",
+  },
+
   // Add more events...
 ];
 
