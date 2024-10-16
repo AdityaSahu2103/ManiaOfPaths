@@ -22,7 +22,7 @@ const data = [
   {
     image: pro4,
     title: "Flexibility to mentor how you want",
-    line: "As a MentorHeal mentor, you're free to teach in your own style and customize your approach based on your mentees ' goals.",
+    line: "As a Path Mania  mentor, you're free to teach in your own style and customize your approach based on your mentees ' goals.",
   },
   {
     image: pro5,
@@ -65,7 +65,7 @@ const Mentor = () => {
               of world-className mentors
             </h1>
             <p className="text-[#8ca1b3]">
-              As a MentorHeal mentor, you'll get to provide mentorship to
+              As a Path Mania mentor, you'll get to provide mentorship to
               mentees in your own style and on your own schedule (and get paid
               for it!).
             </p>

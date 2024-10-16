@@ -80,7 +80,7 @@ const MentorApplication = () => {
           <div className="leftone  text-center  flex flex-col  bg-white h-1/2 sm:w-[500px]">
             <div className=" bg-white text-xl  font-bold text-gray-700 p-4  m-5 ">
               <span className="text-3xl text-[#4a7999]">Aim</span>
-              <br></br>MentorHeal offers holistic wellness mentorship,
+              <br></br>Path Mania offers holistic wellness mentorship,
               connecting individuals with certified mentors in various life
               aspects—career, mental health, relationships, fitness, finance,
               spirituality, and life coaching. We prioritize expertise,
@@ -89,12 +89,12 @@ const MentorApplication = () => {
             <div className=" bg-white  text-xl  font-bold text-gray-700 p-4  m-5">
               <span className="text-3xl text-[#4a7999]">Mission</span>
               <br></br>Empower individuals for a balanced, fulfilling life.
-              MentorHeal provides tools, knowledge, and mentorship across
+              Path Mania  provides tools, knowledge, and mentorship across
               physical, mental, emotional, and spiritual dimensions.
             </div>
             <div className=" bg-white  text-xl font-bold text-gray-700 p-4  m-5">
               <span className="text-3xl text-[#4a7999]">Vision</span>
-              <br></br>MentorHeal aims to pioneer holistic wellness, envisioning
+              <br></br>Path Mania aims to pioneer holistic wellness, envisioning
               a world where individuals achieve complete well-being. We connect
               people with certified mentors, fostering meaningful connections
               for growth and fulfillment.

@@ -12,7 +12,7 @@ function Login() {
 
   useEffect(() => {
     if (loading) return;
-    if (user) navigate("/mentors");
+    if (user) navigate("/");
   }, [user, loading, navigate]);
 
   const handleLogin = (e) => {
